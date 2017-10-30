@@ -2,7 +2,8 @@
 layout: post
 title:  "Variational AutoEncoder(VAE)"
 date:   2017-10-30 
-categories: latex
+category: "machine learning"
+tags: [ml]
 ---
 
 # Variational autoencoder
