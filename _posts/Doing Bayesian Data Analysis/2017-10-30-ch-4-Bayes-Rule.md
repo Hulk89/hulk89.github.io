@@ -3,7 +3,7 @@ layout: post
 title:  "ch 4. Bayes' rule"
 date:   2017-10-30 
 category: "Doing Bayesian Data Analysis"
-tags: [ml]
+tags: [ml, bayesian inference]
 ---
 # 4.1. Bayes' rule
 

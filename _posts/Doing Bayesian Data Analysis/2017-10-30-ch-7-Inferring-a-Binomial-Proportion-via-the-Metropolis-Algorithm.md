@@ -3,7 +3,7 @@ layout: post
 title:  "ch 7. Inferring a Binomial Proportion via the Metropolis Algorithm"
 date:   2017-10-30 
 category: "Doing Bayesian Data Analysis"
-tags: [ml]
+tags: [ml, bayesian inference, mcmc]
 ---
 # Intro
 

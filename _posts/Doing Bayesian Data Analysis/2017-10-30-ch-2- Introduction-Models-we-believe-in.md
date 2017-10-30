@@ -3,7 +3,7 @@ layout: post
 title:  "ch 2. Introduction: Models we believe in"
 date:   2017-10-30 
 category: "Doing Bayesian Data Analysis"
-tags: [ml]
+tags: [ml, bayesian]
 ---
 * data를 통해 우리의 믿음을 수정
   * data의 variance가 작고 믿음의 불확실성이 작은 곳에서는 decision이 쉽다.

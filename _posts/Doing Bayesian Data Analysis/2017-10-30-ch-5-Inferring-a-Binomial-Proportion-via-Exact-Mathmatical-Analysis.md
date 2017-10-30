@@ -3,7 +3,7 @@ layout: post
 title:  "ch 5. Inferring a Binomial Proportion via Exact Mathmatical Analysis"
 date:   2017-10-30 
 category: "Doing Bayesian Data Analysis"
-tags: [ml]
+tags: [ml, bayesian inference, conjugate prior]
 ---
 
 # 서론
