@@ -24,7 +24,7 @@ $$p(z|x) = \frac{p(x|z)p(z)}{p(x)}$$
 
 * 여기서 $$p(x)=∫p(x∣z)p(z)dz$$ 인데 이를 구하기 힘듬!
 * Variational inference는 posterior를 어떤 distribution family들 $$q_\lambda(z\vert x)$$로 근사시킨다. 그래놓고 $$ p(z \vert x) $$와 유사한 값을 찾아나가겠지..
-  * ![3.png](/assets/58DFD32E2D1E50EAB2B4B402596FCCF4.png){:width="400px"}
+  * ![3.png](/resources/58DFD32E2D1E50EAB2B4B402596FCCF4.png){:width="400px"}
 * 유사한 값을 찾기위해 KL-divergence를 쓰면 다음처럼 나온다.
   * $$KL(q_\lambda(z \vert x) \vert\vert p(z\vert x)) = logp(x)-\left ( E_q[log{p(x\vert z)}] - KL(q_\lambda(z\vert x) \vert\vert p(z)) \right )$$
   * 그래서 $$KL(q_\lambda(z\vert x) \vert\vert p(z\vert x))$$를 minimize하는 것은
