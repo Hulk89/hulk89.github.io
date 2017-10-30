@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "perplexity??"
+title:  "perplexity? - self-information, entropy, cross-entropy까지.."
 date:   2017-04-14
 category: "neural machine translation"
 tags: [ml, nmt, entropy]
