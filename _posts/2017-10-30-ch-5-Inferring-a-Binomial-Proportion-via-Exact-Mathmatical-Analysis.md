@@ -99,6 +99,7 @@ $$\begin{align*}  p(\theta\vert z, N) &= p(z, N\vert \theta)p(\theta)/p(z,N) \\ 
 * $p(D\vert M) = \int p(D\vert \theta, M)p(\theta\vert M)d\theta$
 
 여기서 $p(D\vert M)$은 prior를 beta, likelihood를 bernoulli로 하면 $p(z,N)$과 같다.
+
 증명> $$\begin{align*} p(D\vert M) &= \int p(D\vert \theta, M)p(\theta\vert M)d\theta
                            \\ &= \int \theta^z(1-\theta)^{(N-z)}\cdot\theta^{a-1}(1-\theta)^{b-1}/B(a,b) d\theta 
                            \\ &= \int \theta^z(1-\theta)^{(N-z)}\theta^{a-1}(1-\theta)^{b-1}/[B(a,b)\cdot p(z,N)] \cdot p(z,N) d\theta
