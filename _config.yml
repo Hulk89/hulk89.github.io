@@ -5,7 +5,7 @@ description: 혼자 공부하면서 정리한 것을 남기는 블로그입니�
 email: snuboy89@gmail.com
   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://hulk89.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
 github_username:  hulk89
 
