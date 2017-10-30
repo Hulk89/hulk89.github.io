@@ -8,7 +8,7 @@ tags: [ml]
 
 # Variational autoencoder
 
-![IMAGE]({{ site.url }}/assets/0692C74FD7CE6FB1532DB15C7DC4F1A9.jpg){:width="130px"}
+![IMAGE]({{ site.url }}/resources/0692C74FD7CE6FB1532DB15C7DC4F1A9.jpg){:width="130px"}
 
 * $$p(x, z) = p(x|z)p(z)$$
   * $$x$$: data
@@ -31,5 +31,5 @@ $$p(z|x) = \frac{p(x|z)p(z)}{p(x)}$$
   * $$E_q[log{p(x\vert z)}] - KL(q_\lambda(z\vert x) \vert\vert p(z))$$ 를 maximize하는 것!
   * $$p(x\vert z)$$가 decoder, $$q_\lambda(z\vert x)$$를 encoder
 > 식 유도..
-![1.png]({{ site.url }}/assets/F73E1A9A598FF33975F2D141F8EBC8CF.png){:width="773px"}
-![2.png]({{ site.url }}/assets/5269563422231A97269411038931B2E1.png){:width="835px"}
+![1.png]({{ site.url }}/resources/F73E1A9A598FF33975F2D141F8EBC8CF.png){:width="773px"}
+![2.png]({{ site.url }}/resources/5269563422231A97269411038931B2E1.png){:width="835px"}
