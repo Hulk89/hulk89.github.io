@@ -15,8 +15,8 @@ tags: [ml]
   * $$z$$: latent variable
 ## Generation process
 
-$$z_i \sim p(z)$$를 draw한다.
-$$x_i \sim p(x|z)$$를 draw한다.
+1. $$z_i \sim p(z)$$를 draw한다.
+2. $$x_i \sim p(x|z)$$를 draw한다.
 
 우리가 원하는 것은 데이터가 주어졌을 때, 이를 가장 잘 표현하는 z를 찾고싶은 것!
 
