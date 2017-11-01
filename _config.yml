@@ -2,7 +2,6 @@
 
 title: Hulk의 개인 공부용 블로그
 description: 혼자 공부하면서 정리한 것을 남기는 블로그입니다.
-email: snuboy89@gmail.com
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hulk89.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -41,6 +40,13 @@ nav:
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
+
+author:
+  name: hulk.oh(오형석)
+  description: desc
+  contact:
+    github:    https://github.com/Hulk89
+    email:     snuboy89@gmail.com
 
 hero:
   image: /public/img/hulkstudying.jpg
