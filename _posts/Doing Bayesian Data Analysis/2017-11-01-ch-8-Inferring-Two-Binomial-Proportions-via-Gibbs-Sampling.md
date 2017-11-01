@@ -119,3 +119,12 @@ surf = ax.plot_wireframe(xedges[:-1,:-1],
 ```
 
 ![result.png](/resources/FFAC4E8748785FF8CA02300BAB8C0894.png)
+
+
+# Gibbs sampling의 단점
+
+* 각 파라미터의 conditional probability가 필요!
+* **연관도가 높은 파라미터들에 대해서 progress가 멈출 수 있음**
+  * ![HC.png](/resources/5AF203DCFF2B8CA2B22E0E3C4E6A5ADA.png)
+    $\theta_1$과 $\theta_2$가 Highly correlated 면 왼쪽과 같은 그림이 되겠다. 이 때, 파라미터 업데이트는 오른쪽처럼 아주 작게 움직이겠다.
+
