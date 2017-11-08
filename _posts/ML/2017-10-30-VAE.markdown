@@ -3,7 +3,7 @@ layout: post
 title:  "Variational AutoEncoder(VAE)"
 date:   2017-10-30 
 category: "machine learning"
-tags: [ml, generation model]
+tags: [ml, generative model]
 ---
 [참고1](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
 [참고2](http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html)
