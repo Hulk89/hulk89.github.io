@@ -7,6 +7,7 @@ tags: [ml, generative model]
 ---
 [참고1](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
 [참고2](http://jaejunyoo.blogspot.com/2017/04/auto-encoding-variational-bayes-vae-1.html)
+[pytorch 코드](https://github.com/pytorch/examples/blob/master/vae/main.py)
 # Variational autoencoder
 
 * $p(x, z) = p(x\vert z)p(z)$
