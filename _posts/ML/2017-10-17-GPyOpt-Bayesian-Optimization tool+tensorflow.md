@@ -3,7 +3,7 @@ layout: post
 title:  "GPyOpt - Bayesian Optimization and tensorflow 예제 만들기"
 date:   2017-10-17
 category: "machine learning"
-tags: [tensorflow, bayesian inference]
+tags: [tensorflow, bayesian inference, optimization]
 ---
 
 # 문서 내용
