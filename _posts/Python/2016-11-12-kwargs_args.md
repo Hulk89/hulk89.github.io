@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "kargs, args"
+date:   2016-11-12
+category: "python"
+tags: [python, args]
+---
+
 ## `*args`
 파라미터를 몇개 받을 지 모르는 경우 사용한다. **튜플** 형태로 전달된다.
 
