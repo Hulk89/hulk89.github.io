@@ -5,10 +5,6 @@ title: Home
 
 <div class="hero">
   <img src="{{ site.baseurl }}{{ site.hero.image }}" width="300" height="300"/>
-  <p>
-    <h3>오늘도 공부 중!</h3>
-  </p>
-  
 </div>
 
 <div class="tags-expo">
@@ -17,21 +13,31 @@ title: Home
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     {% endfor %}
   </div>
-  <hr/>
-  <div class="tags-expo-section">
-    {% for tag in site.categories %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-      <li>
-        {{ post.title }}
-      <small class="post-date">{{ post.date | date_to_string }}</small>
-      </li>
-      </a>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-</div>
+  
 
+  <div class="posts">
+    
+    <h3 align="center"><b> 공부중...</b></h3>
+    <hr/>
+    {% for post in site.posts limit:3 %}
+    <div class="post">
+      <h1 class="post-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      {% if post.tags %} | 
+        {% for tag in post.tags %}
+          <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+        {% endfor %}
+      {% endif %}
+      
+      <div class="post-more">
+        <a href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+      </div>
+      <hr/>
+    </div>
+    {% endfor %}
+  </div>  
 </div>
