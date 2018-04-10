@@ -135,7 +135,7 @@
           KL -= -(initial_value[i]/N_i)*Math.log(initial_value[i]/N_i)
         }
         d3.select("#graph_viz").select("h3").text("sampled :" + N_o)
-        d3.select("#markov_chain_viz").select("h3").text("markov-chain    KL-divergence: " + KL.toFixed(5))
+        d3.select("#markov_chain_viz").select("h3").html("markov-chain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KL-div.: " + KL.toFixed(5))
 
         timeout = setTimeout(updateLogic, duration);
     }
