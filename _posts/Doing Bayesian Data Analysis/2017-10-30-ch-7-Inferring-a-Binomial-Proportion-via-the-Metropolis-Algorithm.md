@@ -5,6 +5,12 @@ date:   2017-10-30
 category: "Doing Bayesian Data Analysis"
 tags: [ml, bayesian inference, mcmc]
 ---
+
+# 호객행위
+
+d3를 가지고 만들어본 예제이다. 왼쪽이 실제 distribution이며, 오른쪽이 sampling을 한 결과이며, burn-in은 따로 하지 않았다.
+{% include metropolis.html %}
+
 # Intro
 
 * 우리가 원하는건 posterior $p(\theta \vert  D)$
@@ -133,5 +139,3 @@ plt.show()
 ![Unknown.png](/resources/A9E4D0A0D3DE9945C57BE86BDBEB20BA.png)
 결과를 보면 잘 나오는 것을 알 수 있다. 
 
-다음은 d3를 가지고 만들어본 예제이다. 왼쪽이 실제 distribution이며, 오른쪽이 sampling을 한 결과이며, burn-in은 따로 하지 않았다.
-{% include metropolis.html %}
