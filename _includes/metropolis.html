@@ -76,6 +76,7 @@
     <button onclick="restart()" id="restart">restart</button>
     <button onclick="stop()">stop</button>
     
+    
     <script type="text/javascript">
     
     var m_width = 300
@@ -121,10 +122,20 @@
 
         observation[metropolis.state] += 1;
         updateObs(observation, '#graph_viz')
+        
         function total(arr) { 
           return arr.reduce((a, v)=>a + v);
         }
-        d3.select("#graph_viz").select("h3").text("sampled :" + total(observation))
+        var KL = 0
+        N_i = total(initial_value)
+        N_o = total(observation)
+
+        for( var i = 0 ; i < 7 ; i++){
+          KL += -(initial_value[i]/N_i)*Math.log(observation[i]/N_o)
+          KL -= -(initial_value[i]/N_i)*Math.log(initial_value[i]/N_i)
+        }
+        d3.select("#graph_viz").select("h3").text("sampled :" + N_o)
+        d3.select("#markov_chain_viz").select("h3").text("markov-chain    KL-divergence: " + KL.toFixed(5))
 
         timeout = setTimeout(updateLogic, duration);
     }
