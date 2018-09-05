@@ -12,7 +12,17 @@ tags: [vim, neovim]
 * vimrc 설정
 
 # neovim 설치
-`brew install neovim/neovim/neovim`
+* osx의 경우
+    * `brew install neovim/neovim/neovim`
+* ubuntu의 경우
+    * `apt-add-repository ppa:neovim-ppa/stable`
+    * `apt-get update`
+    * `apt-get install neovim`
+    * `apt-get install python-dev python-pip python3-dev python3-pip`
+    * `pip3 install --user neovim`
+    * 다음 alias 추가
+        * `alias vi="nvim"`
+        * `alias vim="nvim"`
 
 더 좋다고 해서 깔긴하지만, 필수는 아니다.
 
@@ -156,4 +166,10 @@ nmap <S-n> :NERDTree<CR>
 let g:jedi#popup_on_dot = 0                       " .찍었을 때 popup하지 않도록 "
 let g:jedi#completions_command = "<S-Tab>"        " auto completion 단축키 변경 "
 set splitbelow                                    " 아랫쪽에 doc string을 보여줌 "
+```
+---
+# ycmd server SHUT DOWN에러가 나면...
+```bash
+cd ~.vim/bundle/YouCompleteMe
+./install.py
 ```
