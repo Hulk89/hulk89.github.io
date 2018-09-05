@@ -30,6 +30,7 @@ neovim을 깔 경우 .vimrc와 .vim 폴더가 다르기 때문에 폴더를 alia
 * `mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}`
 * `ln -s ~/.vim $XDG_CONFIG_HOME/nvim`
 * `ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim`
+
 ---
 
 # Vundle 설치
