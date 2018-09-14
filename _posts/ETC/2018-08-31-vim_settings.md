@@ -52,6 +52,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'cocopon/iceberg.vim'
 
 call vundle#end()
 
@@ -97,6 +98,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'cocopon/iceberg.vim'
+
 call vundle#end()
 
 filetype plugin indent on    " required
@@ -151,6 +154,16 @@ fun! ShowFuncName()
     echohl None
     call search("\\%" . lnum . "l" . "\\%" . col . "c")
 endfun
+
+" Color scheme
+if !has('gui_running')
+    set t_Co=256
+endif
+
+colorscheme iceberg
+let g:lightline = { 'colorscheme': 'iceberg' }
+set laststatus=2
+set noshowmode
 
 " Key Map "
 map f :call ShowFuncName() <CR>
