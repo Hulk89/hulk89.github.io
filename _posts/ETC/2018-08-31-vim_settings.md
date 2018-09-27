@@ -180,6 +180,9 @@ nmap <S-n> :NERDTree<CR>
 let g:jedi#popup_on_dot = 0                       " .찍었을 때 popup하지 않도록 "
 let g:jedi#completions_command = "<S-Tab>"        " auto completion 단축키 변경 "
 set splitbelow                                    " 아랫쪽에 doc string을 보여줌 "
+
+" clipboard 공유
+set clipboard=unnamedplus
 ```
 ---
 # ycmd server SHUT DOWN에러가 나면...
