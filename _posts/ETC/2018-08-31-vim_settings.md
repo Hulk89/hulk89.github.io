@@ -53,6 +53,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'cocopon/iceberg.vim'
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 
