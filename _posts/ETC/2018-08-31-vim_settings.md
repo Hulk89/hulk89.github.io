@@ -135,7 +135,7 @@ set noshowmode
 " Key Map "
 
 " NERDTree "
-nmap <S-n> :NERDTree<CR>
+nmap <leader>n :NERDTree<CR>
 
 """"""""""""""""" COC """""""""""""""
 " if hidden is not set, TextEdit might fail.
