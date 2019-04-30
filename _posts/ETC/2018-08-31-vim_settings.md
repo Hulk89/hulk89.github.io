@@ -81,7 +81,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'cocopon/iceberg.vim'
 Plugin 'neoclide/coc.nvim'
-
+Plugin 'posva/vim-vue'
+Plugin 'shime/vim-livedown'
 call vundle#end()
 
 filetype plugin indent on    " required
@@ -266,6 +267,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
     * `:PluginInstall`
     * `:call coc#util#install()`
     * `:CocInstall coc-python`
+    * `:CocInstall coc-pyls`
 
 # jedi, neovim install
 * `pip install neovim jedi`
