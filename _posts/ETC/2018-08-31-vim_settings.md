@@ -268,6 +268,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
     * `:call coc#util#install()`
     * `:CocInstall coc-python`
     * `:CocInstall coc-pyls`
+    * `:CocInstall coc-vetur`
 
 # jedi, neovim install
 * `pip install neovim jedi`
