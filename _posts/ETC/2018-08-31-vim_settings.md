@@ -261,14 +261,94 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 ```
 
+# jedi, neovim install
+* `pip install neovim jedi python-language-server`
+
 # PluginInstall
 
 * vi에 들어가서 
     * `:PluginInstall`
     * `:call coc#util#install()`
     * `:CocInstall coc-python`
-    * `:CocInstall coc-pyls`
+    * `:CocInstall coc-json`
     * `:CocInstall coc-vetur`
 
-# jedi, neovim install
-* `pip install neovim jedi`
+# CocConfig
+
+* `:CocConfig`로 들어가서 다음처럼 세팅해줌
+  * `python.jediPath`는 알아서 잘 깔린 곳으로 넣어준다. 
+
+```json
+{
+    "python.jediPath": "/Users/hyeongseokoh/.pyenv/versions/general-3.7.2/lib/python3.7/site-packages/",
+    "languageserver": {
+        "python": {
+            "command": "python",
+            "args": [
+                "-mpyls",
+                "-vv",
+                "--log-file",
+                "/tmp/lsp_python.log"
+            ],
+            "trace.server": "verbose",
+            "filetypes": [
+                "python"
+            ],
+            "settings": {
+                "pyls": {
+                    "enable": true,
+                    "trace": {
+                        "server": "verbose"
+                    },
+                    "commandPath": "",
+                    "configurationSources": [
+                        "pycodestyle"
+                    ],
+                    "plugins": {
+                        "jedi_completion": {
+                            "enabled": true
+                        },
+                        "jedi_hover": {
+                            "enabled": true
+                        },
+                        "jedi_references": {
+                            "enabled": true
+                        },
+                        "jedi_signature_help": {
+                            "enabled": true
+                        },
+                        "jedi_symbols": {
+                            "enabled": true,
+                            "all_scopes": true
+                        },
+                        "mccabe": {
+                            "enabled": true,
+                            "threshold": 15
+                        },
+                        "preload": {
+                            "enabled": true
+                        },
+                        "pycodestyle": {
+                            "enabled": true
+                        },
+                        "pydocstyle": {
+                            "enabled": false,
+                            "match": "(?!test_).*\\.py",
+                            "matchDir": "[^\\.].*"
+                        },
+                        "pyflakes": {
+                            "enabled": true
+                        },
+                        "rope_completion": {
+                            "enabled": true
+                        },
+                        "yapf": {
+                            "enabled": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
