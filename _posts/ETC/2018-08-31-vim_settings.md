@@ -104,6 +104,11 @@ set scrolloff=4                     " 스크롤 할때 위아래 줄 유지, 화
 set tabstop=4                       " 탭을 4칸 "
 set softtabstop=4                   " tab키를 입력 하였을때 입력될 너비 "
 set shiftwidth=4                    " 자동 들여쓰기 4칸 "
+" file에 따라 다르게 적용 "
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+autocmd FileType css setlocal ts=2 sts=2 sw=2
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+autocmd FileType vue setlocal ts=2 sts=2 sw=2
 set shiftround                      " "
 set expandtab                       " 탭대신 스페이스 "
 
